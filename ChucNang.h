@@ -1213,7 +1213,7 @@ int Chucnang(int hientai, NguoiDung ngDung[], int quyen, int &m, Quyen q[], char
 								if (strcmp(ngDung[l].sCMND, yc[i].ID) == 0) ndht = l;
 							}
 							cout << "Xac nhan thanh cong!" << endl;
-							cout << ndht << endl;
+							
 							ThongBaoTuDong(ngDung, thongbao, muonsach, ndht, yc[i].tensach, 0);
 							for (int j = i; j < sl; j++){
 								yc[j] = yc[j + 1];
@@ -1389,7 +1389,7 @@ int Chucnang(int hientai, NguoiDung ngDung[], int quyen, int &m, Quyen q[], char
 	else if (quyen == 24){
 		int qq;
 		cout << "Ban muon thoat?(yes = 1, no = 0) "; cin >> qq; cin.ignore();
-		if (qq == 1); //exit(0);
+		if (qq == 1) exit(0);
 	}
 	return 0;
 }
